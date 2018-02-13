@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercise 1 </title>
+    </head>
+    <body>
+        <center>
+            <h2> --  Biodata  -- </h2>
+        </center>
+            <fieldset>
+                <legend> <b> Personal Data  </b></legend>
+                <table border="0">
+                    <tr>
+                        <td><label for="nama"> Nama </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="nama" placeholder="Nama" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ttl"> Tempat/Tanggal Lahir </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="ttl" placeholder="Tempat Lahir"></td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /</td>
+                        <td><input type="date" id="date"></td>
+                    </tr>
+                    <tr>
+                        <td> Gender </td>
+                        <td> : </td>
+                        <td><input type="radio" id="laki" name="sex" value="Pria"> Pria </td>
+                        <td><input type="radio" id="cewe" name="sex" value="Wanita"> Wanita </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telpon"> Telephone </label></td>
+                        <td> : </td>
+                        <td><input type="number" id="telpon" placeholder="telp/hp"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail"> Email </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="mail" placeholder="Email"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend> <b> Riwayat Pendidikan  </b></legend>
+                <table border="0">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th> Nama Institusi </th>
+                        <th></th>
+                        <th> Tahun Lulus </th>
+                    </tr>
+                    <tr>
+                        <td><label for="sd"> SD </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="sd"></td>
+                        <td></td>
+                        <td><input type="text" id="lulus-sd"></td>
+                        <td><input type="checkbox" id="belum-sd" value="tidak-sd"> Check bila tidak ada</td>
+                    </tr>
+                    <tr>
+                        <td><label for="smp"> SMP </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="smp"></td>
+                        <td></td>
+                        <td><input type="text" id="lulus-smp"></td>
+                        <td><input type="checkbox" id="belum-smp" value="tidak-smp"> Check bila tidak ada</td>
+                    </tr>
+                    <tr>
+                        <td><label for="sma"> SMA/SMK </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="sma"></td>
+                        <td></td>
+                        <td><input type="text" id="lulus-sma"></td>
+                        <td><input type="checkbox" id="belum-sma" value="tidak-sma"> Check bila tidak ada</td>
+                    </tr>
+                    <tr>
+                        <td><label for="s1"> S1 </label></td>
+                        <td> : </td>
+                        <td><input type="text" id="s1"></td>
+                        <td></td>
+                        <td><input type="text" id="lulus-s1"></td>
+                        <td><input type="checkbox" id="belum-kuliah" value="tidak-kuliah"> Check bila tidak ada</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend> <b> Riwayat Pendidikan  </b></legend>
+                <table border="0">
+                    <tr>
+                        <th> Nama Perusahaan </th>
+                        <th> Lama Bekerja </th>
+                        <th> Posisi </th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nama-perusahaan"></td>
+                        <td><input type="text" id="lama-bekerja"></td>
+                        <td><input type="text" id="posisi"></td>
+                        <td><input type="checkbox" id="belum-bekerja" value="tidak-bekerja"> Check bila tidak ada</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <p><center><input type="submit" onclick="pijitTombol()" value="Submit"></center></p>
+            <p id="output"></p>
+            <p id="output1"></p>
+        <script src="latihan.js"></script>
+    </body>
+</html>
